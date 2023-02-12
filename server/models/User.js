@@ -18,7 +18,7 @@ const UserSchema = new mongoose.Schema(
         password:{
             type: String,
             required: true,
-            min: 5,
+            min: 8,
         },
         address:{
             type: String,
@@ -30,8 +30,7 @@ const UserSchema = new mongoose.Schema(
         mobile:{
             type: Number,
             required: true,
-            min: 2,
-            max: 50,
+            max: 10,
         },
         picturePath:{
             type: String,
